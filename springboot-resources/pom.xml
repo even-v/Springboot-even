@@ -12,4 +12,25 @@
     <artifactId>springboot-resources</artifactId>
 
 
+    <!--<build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-remote-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>bundle</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <includes>
+                        <include>**/*.yml</include>
+                        <include>**/*.properties</include>
+                    </includes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>-->
+
 </project>
