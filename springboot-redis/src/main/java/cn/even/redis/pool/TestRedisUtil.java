@@ -12,7 +12,7 @@ import redis.clients.jedis.Jedis;
  * @date 2020-02-16
  */
 public class TestRedisUtil {
-    public static void main(String[] argd) {
+    public static void main(String[] args) {
         //从池中获取实例
         Jedis jedis = RedisUtil.getJedisInstance("192.168.8.128");
 
