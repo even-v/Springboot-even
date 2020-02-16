@@ -9,19 +9,20 @@ import redis.clients.jedis.JedisPoolConfig;
  * <p>
  * 描述: Redis连接池类
  * </p>
- * @author  ipark123@163.com
- * @date 2020-02-16
+ *
+ * @author ipark123@163.com
  * @version 1.0.0
+ * @date 2020-02-16
  */
 public class RedisUtil {
 
     /**
-     * 服务器IP地址
+     * Redis服务器默认IP地址
      */
-    private final static String HOST = "192.168.8.128";
+    private final static String HOST = "127.0.0.1";
 
     /**
-     * 端口
+     * Redis服务器默认端口
      */
     private final static int PORT = 6379;
 
@@ -36,7 +37,7 @@ public class RedisUtil {
     private final static int MAX_ACTIVE = 1024;
 
     /**
-     * 控制一个pool最多有多少个状态为idle(空闲的)的jedis实例，默认值也是8。
+     * 控制一个pool最多有多少个状态为idle(空闲的)的Jedis实例，默认值是8。
      */
     private final static int MAX_IDLE = 32;
 
