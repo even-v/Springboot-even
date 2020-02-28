@@ -1,2 +1,2 @@
 # Springboot-even
-用于学习基于Springboot的各种技术
+自主学习项目，有任何疑问可以联系：ipark123@163.com
