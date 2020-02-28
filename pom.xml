@@ -11,6 +11,8 @@
     <modules>
         <module>springboot-resources</module>
         <module>springboot-redis</module>
+        <module>SpringbootDataStructure</module>
+        <module>Springboot-nodeJs</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

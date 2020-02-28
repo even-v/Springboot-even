@@ -21,5 +21,6 @@ public class TestRedisUtil {
 
         //释放实例资源
         RedisUtil.release(jedis);
+        System.out.println("dd");
     }
 }
