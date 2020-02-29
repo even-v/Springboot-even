@@ -34,11 +34,11 @@ Redis 与其他 key - value 缓存产品有以下三个特点：
 
 安装好后目录结构如下图
 
-![image-20200229164130249](D:\workspace\md\image\image-20200229164130249.png)
+![image-20200229164130249](https://github.com/even-v/Springboot-even/blob/master/springboot-redis/src/main/resources/public/image-20200229164130249.png)
 
 把该目录配置到环境变量path中，然后启动cmd执行 `redis-server.exe redis.windows.conf` 会出现如下的界面，表示启动成功。
 
-![image-20200229164430519](D:\workspace\md\image\image-20200229164430519.png)
+![image-20200229164430519](https://github.com/even-v/Springboot-even/blob/master/springboot-redis/src/main/resources/public/image-20200229164430519.png)
 
 不要关闭当前窗口，重新打开一个新的cmd执行 `redis-cli.exe`，表示启动redis客户端，出现如下图表示可以执行redis语句了。
 
