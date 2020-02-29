@@ -42,7 +42,7 @@ Redis 与其他 key - value 缓存产品有以下三个特点：
 
 不要关闭当前窗口，重新打开一个新的cmd执行 `redis-cli.exe`，表示启动redis客户端，出现如下图表示可以执行redis语句了。
 
-![image-20200229164705580](https://github.com/even-v/Springboot-even/blob/master/images/image-20200229164705580.png)
+![image-20200229164705580](https://github.com/even-v/Springboot-even/blob/master/springboot-redis/src/main/resources/public/image-20200229164705580.png)
 
 测试redis性能 ，可以通过执行命令 `redis-benchmark`来测试性能
 
