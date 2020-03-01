@@ -10,50 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>springboot-redis</artifactId>
 
-   <!-- <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-remote-resources-plugin</artifactId>
-                <configuration>
-                    <resourceBundles>
-                        <resourceBundle>cn.even:springboot-resources:${project.version}</resourceBundle>
-                    </resourceBundles>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>process</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>sql-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>create-schema</id>
-                        <phase>process-test-resources</phase>
-                        <goals>
-                            <goal>execute</goal>
-                        </goals>
-                        <configuration>
-                            <autocommit>true</autocommit>
-                            <srcFiles>
-                                <srcFile>${project.build.directory}/maven-shared-archive-resources/application.yml
-                                </srcFile>
-                                <srcFile>${project.build.directory}/maven-shared-archive-resources/log4j.properties
-                                </srcFile>
-                            </srcFiles>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>-->
-
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
@@ -61,10 +17,15 @@
             <version>${project.version}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
         </dependency>
 
         <!-- 配置连接池需要-->
@@ -73,12 +34,6 @@
             <artifactId>commons-pool2</artifactId>
         </dependency>
 
-
-        <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-        </dependency>
 
     </dependencies>
 </project>
