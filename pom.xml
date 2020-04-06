@@ -14,6 +14,7 @@
         <module>Springboot-dataStructure</module>
         <module>Springboot-nodeJs</module>
         <module>Springboot-dataStructure</module>
+        <module>springboot-designPattern</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

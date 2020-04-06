@@ -2,19 +2,17 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringbootdataStructure" />
-        <module name="SpringbootnodeJs" />
-        <module name="springbootredis" />
-        <module name="springbootresources" />
+        <module name="Springboot-dataStructure" />
+        <module name="springboot-designPattern" />
+        <module name="Springboot-nodeJs" />
+        <module name="springboot-redis" />
+        <module name="springboot-resources" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="redis" target="1.8" />
-      <module name="Springboot-dataStructure" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
