@@ -1,5 +1,9 @@
 package cn.even.concurrent.thread;
 
+
+import java.util.concurrent.Future;
+import java.util.concurrent.FutureTask;
+
 /**
  * FileName: TestThread
  * Author:   jiangjingwei@yysoft.org.cn
@@ -8,7 +12,7 @@ package cn.even.concurrent.thread;
  */
 public class TestThread {
     public static void main(String[] args) {
-        lockTest1();
+        callableTest();
         // System.out.println(Thread.currentThread().getName()+"在执行----");
     }
 
@@ -87,5 +91,19 @@ public class TestThread {
         t02.start();
         t03.start();
         t04.start();
+    }
+
+    public static void callableTest() {
+        CallableThread ct = new CallableThread();
+        FutureTask<Integer> task = new FutureTask<>(ct);
+        new Thread(task).start();
+
+        try {
+            int result = task.get();
+            System.out.println("result=" + result);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }
