@@ -16,6 +16,7 @@
         <module>springboot-designPattern</module>
         <module>springboot-jvm</module>
         <module>springboot-concurrent</module>
+        <module>springboot-javase</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
