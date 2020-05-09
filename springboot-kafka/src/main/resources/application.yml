@@ -1,0 +1,19 @@
+spring:
+  kafka:
+    #ip + port
+    bootstrap-servers: localhost:9092
+    consumer:
+      #消费者默认组
+      group-id: 0
+      enable-auto-commit: true
+      auto-commit-interval: 1000
+      #消费者序列化与反序列化
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      #生产者序列化与反序列化
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      #每次批量发送消息的数量
+      batch-size: 65536
+      buffer-memory: 524288

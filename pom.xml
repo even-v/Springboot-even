@@ -17,6 +17,9 @@
         <module>springboot-jvm</module>
         <module>springboot-concurrent</module>
         <module>springboot-javase</module>
+        <module>springboot-jpa</module>
+        <module>springboot-zookeeper</module>
+        <module>springboot-kafka</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -147,4 +150,17 @@
         </dependency>
     </dependencies>
 
+    <repositories>
+        <repository>
+            <id>nexus-aliyun</id>
+            <name>nexus-aliyun</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
