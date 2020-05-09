@@ -39,7 +39,7 @@
             </exclusions>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.0.7</version>
@@ -49,17 +49,17 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generator</artifactId>
             <version>3.0.7</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
 
-        <dependency>
+       <!-- <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-        </dependency>
+        </dependency>-->
         <!-- https://mvnrepository.com/artifact/com.google.zxing/core -->
         <dependency>
             <groupId>com.google.zxing</groupId>
@@ -132,11 +132,11 @@
             <artifactId>shiro-spring</artifactId>
             <version>1.4.0</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>com.jfinal</groupId>
             <artifactId>jfinal</artifactId>
             <version>3.5</version>
-        </dependency>
+        </dependency>-->
 
         <!--websocket-->
         <dependency>

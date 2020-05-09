@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.Map;
 
 /**
  * FileName: ProducerController
@@ -22,8 +23,8 @@ public class ProducerController {
     KafkaTemplate<String,Object> kafkaTemplate;
 
     @PostMapping("/send")
-    public String sendMsg(@RequestBody String topic,@RequestBody String data){
-        kafkaTemplate.send(topic,data );
+    public String sendMsg(@RequestBody Map<String,String> map){
+        kafkaTemplate.send(map.get("topic"),map.get("data") );
         return "success";
     }
 

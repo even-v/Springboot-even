@@ -10,8 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Description: Springboot启动类
  */
 @SpringBootApplication
-public class App {
+public class KafkaApp {
     public static void main(String[] args) {
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(KafkaApp.class, args);
     }
 }

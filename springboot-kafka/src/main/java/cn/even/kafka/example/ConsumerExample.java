@@ -1,5 +1,7 @@
 package cn.even.kafka.example;
 
+import lombok.extern.slf4j.Slf4j;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.annotation.KafkaListener;
 //import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.stereotype.Component;
@@ -12,10 +14,11 @@ import org.springframework.stereotype.Component;
  * Description: 消费者
  */
 @Component
+@Slf4j
 public class ConsumerExample {
 
-    @KafkaListener(topics = {"demo"})
-//    public void listen(Consumer){
-
-//    }
+    @KafkaListener(topics = {"demo"},groupId = "0")
+    public void listen(ConsumerRecord<String,Object> record) {
+        log.info(record.topic() + ":" + record.key() + "=" + record.value());
+    }
 }
