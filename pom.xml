@@ -14,7 +14,7 @@
         <module>Springboot-nodeJs</module>
         <module>Springboot-dataStructure</module>
         <module>springboot-designPattern</module>
-        <module>springboot-jvm</module>
+      <!--  <module>springboot-jvm</module>-->
         <module>springboot-concurrent</module>
         <module>springboot-javase</module>
         <module>springboot-jpa</module>
