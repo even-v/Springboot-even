@@ -17,6 +17,7 @@
         <module name="springboot-resources" />
         <module name="springboot-jvm" />
         <module name="springboot-zookeeper" />
+        <module name="springboot-netty" />
         <module name="springboot-javase" />
       </profile>
     </annotationProcessing>
@@ -31,6 +32,7 @@
       <module name="springboot-jpa" options="-parameters" />
       <module name="springboot-jvm" options="-parameters" />
       <module name="springboot-kafka" options="-parameters" />
+      <module name="springboot-netty" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
       <module name="springboot-resources" options="-parameters" />
       <module name="springboot-zookeeper" options="-parameters" />

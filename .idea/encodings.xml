@@ -7,10 +7,12 @@
     <file url="file://$PROJECT_DIR$/Springboot-nodeJs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-concurrent/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-designPattern" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-designPattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-javase/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-jpa/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-jvm/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-kafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-netty/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-resources" charset="UTF-8" />
