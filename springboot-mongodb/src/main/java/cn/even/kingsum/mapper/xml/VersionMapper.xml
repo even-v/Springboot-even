@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.even.kingsum.mapper.VersionMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.even.kingsum.entity.Version">
+    <result column="id" property="id" />
+        <result column="system_type" property="systemType" />
+        <result column="version_code" property="versionCode" />
+        <result column="size" property="size" />
+        <result column="version_name" property="versionName" />
+        <result column="in_force" property="inForce" />
+        <result column="content" property="content" />
+        <result column="publish_time" property="publishTime" />
+        <result column="channel" property="channel" />
+        <result column="put_away" property="putAway" />
+        <result column="app_id" property="appId" />
+        <result column="app_name" property="appName" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        system_type, version_code, size, version_name, in_force, content, publish_time, channel, put_away, app_id, app_name
+    </sql>
+
+</mapper>

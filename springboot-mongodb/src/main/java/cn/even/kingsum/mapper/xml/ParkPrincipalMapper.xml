@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.even.kingsum.mapper.ParkPrincipalMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.even.kingsum.entity.ParkPrincipal">
+    <result column="id" property="id" />
+        <result column="park_no" property="parkNo" />
+        <result column="park_name" property="parkName" />
+        <result column="unit_id" property="unitId" />
+        <result column="create_time" property="createTime" />
+        <result column="main" property="main" />
+        <result column="principal_name" property="principalName" />
+        <result column="principal_telephone" property="principalTelephone" />
+        <result column="principal_id" property="principalId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        park_no, park_name, unit_id, create_time, main, principal_name, principal_telephone, principal_id
+    </sql>
+
+</mapper>

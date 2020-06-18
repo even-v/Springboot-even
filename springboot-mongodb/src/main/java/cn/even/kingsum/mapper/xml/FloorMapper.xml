@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.even.kingsum.mapper.FloorMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.even.kingsum.entity.Floor">
+    <result column="id" property="id" />
+        <result column="unit_id" property="unitId" />
+        <result column="create_time" property="createTime" />
+        <result column="floor_no" property="floorNo" />
+        <result column="floor_name" property="floorName" />
+        <result column="create_user" property="createUser" />
+        <result column="status" property="status" />
+        <result column="real_no" property="realNo" />
+        <result column="floor_height" property="floorHeight" />
+        <result column="floor_pic" property="floorPic" />
+        <result column="bimcid" property="bimcid" />
+        <result column="building_id" property="buildingId" />
+        <result column="park_id" property="parkId" />
+        <result column="region" property="region" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        unit_id, create_time, floor_no, floor_name, create_user, status, real_no, floor_height, floor_pic, bimcid, building_id, park_id, region
+    </sql>
+
+</mapper>

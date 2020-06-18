@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.even.kingsum.mapper.EmployeeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.even.kingsum.entity.Employee">
+    <result column="id" property="id" />
+        <result column="sex" property="sex" />
+        <result column="mobile" property="mobile" />
+        <result column="telphone" property="telphone" />
+        <result column="email" property="email" />
+        <result column="other" property="other" />
+        <result column="emp_name" property="empName" />
+        <result column="emp_code" property="empCode" />
+        <result column="rapporteur" property="rapporteur" />
+        <result column="dept" property="dept" />
+        <result column="info_more" property="infoMore" />
+        <result column="create_user" property="createUser" />
+        <result column="status" property="status" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="valid" property="valid" />
+        <result column="org_id" property="orgId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        sex, mobile, telphone, email, other, emp_name, emp_code, rapporteur, dept, info_more, create_user, status, create_time, update_time, valid, org_id
+    </sql>
+
+</mapper>

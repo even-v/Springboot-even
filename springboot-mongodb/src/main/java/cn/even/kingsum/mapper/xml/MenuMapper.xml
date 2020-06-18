@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.even.kingsum.mapper.MenuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.even.kingsum.entity.Menu">
+    <result column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="desc" property="desc" />
+        <result column="url" property="url" />
+        <result column="sequence" property="sequence" />
+        <result column="parent" property="parent" />
+        <result column="system_id" property="systemId" />
+        <result column="status" property="status" />
+        <result column="icon_url" property="iconUrl" />
+        <result column="app_view" property="appView" />
+        <result column="system_type" property="systemType" />
+        <result column="modular_id" property="modularId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        name, desc, url, sequence, parent, system_id, status, icon_url, app_view, system_type, modular_id
+    </sql>
+
+</mapper>

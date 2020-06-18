@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.even.kingsum.mapper.RoleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.even.kingsum.entity.Role">
+    <result column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="desc" property="desc" />
+        <result column="org_id" property="orgId" />
+        <result column="system_id" property="systemId" />
+        <result column="status" property="status" />
+        <result column="system_type" property="systemType" />
+        <result column="admin" property="admin" />
+        <result column="create_time" property="createTime" />
+        <result column="create_user" property="createUser" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        name, desc, org_id, system_id, status, system_type, admin, create_time, create_user
+    </sql>
+
+</mapper>

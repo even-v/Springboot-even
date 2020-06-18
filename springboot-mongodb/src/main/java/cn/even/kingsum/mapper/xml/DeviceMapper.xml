@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.even.kingsum.mapper.DeviceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.even.kingsum.entity.Device">
+    <result column="id" property="id" />
+        <result column="unit_id" property="unitId" />
+        <result column="building_id" property="buildingId" />
+        <result column="build_name" property="buildName" />
+        <result column="floor_name" property="floorName" />
+        <result column="place" property="place" />
+        <result column="device_model" property="deviceModel" />
+        <result column="device_name" property="deviceName" />
+        <result column="device_type" property="deviceType" />
+        <result column="device_Brand" property="deviceBrand" />
+        <result column="install_interface" property="installInterface" />
+        <result column="device_status" property="deviceStatus" />
+        <result column="fire_sys_type" property="fireSysType" />
+        <result column="fire_device_type" property="fireDeviceType" />
+        <result column="x_asix" property="xAsix" />
+        <result column="y_asix" property="yAsix" />
+        <result column="addr_transport_id" property="addrTransportId" />
+        <result column="addr_system_addr" property="addrSystemAddr" />
+        <result column="addr_controller_no" property="addrControllerNo" />
+        <result column="addr_area_no" property="addrAreaNo" />
+        <result column="addr_place_no" property="addrPlaceNo" />
+        <result column="addr_CRT_key" property="addrCrtKey" />
+        <result column="addr_equip_no" property="addrEquipNo" />
+        <result column="addr_equip_no_int" property="addrEquipNoInt" />
+        <result column="run_status" property="runStatus" />
+        <result column="run_time" property="runTime" />
+        <result column="bim_x" property="bimX" />
+        <result column="bim_y" property="bimY" />
+        <result column="bim_z" property="bimZ" />
+        <result column="source" property="source" />
+        <result column="tag_no" property="tagNo" />
+        <result column="floor_no" property="floorNo" />
+        <result column="partition_no" property="partitionNo" />
+        <result column="partition_name" property="partitionName" />
+        <result column="current" property="current" />
+        <result column="info_remark" property="infoRemark" />
+        <result column="many_fan" property="manyFan" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        unit_id, building_id, build_name, floor_name, place, device_model, device_name, device_type, device_Brand, install_interface, device_status, fire_sys_type, fire_device_type, x_asix, y_asix, addr_transport_id, addr_system_addr, addr_controller_no, addr_area_no, addr_place_no, addr_CRT_key, addr_equip_no, addr_equip_no_int, run_status, run_time, bim_x, bim_y, bim_z, source, tag_no, floor_no, partition_no, partition_name, current, info_remark, many_fan
+    </sql>
+
+</mapper>

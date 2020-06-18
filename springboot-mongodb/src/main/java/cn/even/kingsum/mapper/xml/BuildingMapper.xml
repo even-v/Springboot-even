@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.even.kingsum.mapper.BuildingMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.even.kingsum.entity.Building">
+    <result column="id" property="id" />
+        <result column="unit_id" property="unitId" />
+        <result column="build_code" property="buildCode" />
+        <result column="build_name" property="buildName" />
+        <result column="floor_count" property="floorCount" />
+        <result column="fire_control_address" property="fireControlAddress" />
+        <result column="build_management" property="buildManagement" />
+        <result column="fire_facilities" property="fireFacilities" />
+        <result column="ground_layer" property="groundLayer" />
+        <result column="underground_layer" property="undergroundLayer" />
+        <result column="fire_control_room" property="fireControlRoom" />
+        <result column="status" property="status" />
+        <result column="creat_user_id" property="creatUserId" />
+        <result column="create_time" property="createTime" />
+        <result column="area_height" property="areaHeight" />
+        <result column="build_pic" property="buildPic" />
+        <result column="park_id" property="parkId" />
+        <result column="region" property="region" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        unit_id, build_code, build_name, floor_count, fire_control_address, build_management, fire_facilities, ground_layer, underground_layer, fire_control_room, status, creat_user_id, create_time, area_height, build_pic, park_id, region
+    </sql>
+
+</mapper>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.even.kingsum.mapper.OrgMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.even.kingsum.entity.Org">
+    <result column="id" property="id" />
+        <result column="company_flag" property="companyFlag" />
+        <result column="level" property="level" />
+        <result column="fire_risk" property="fireRisk" />
+        <result column="tel" property="tel" />
+        <result column="email" property="email" />
+        <result column="mobile_phone" property="mobilePhone" />
+        <result column="other_contact" property="otherContact" />
+        <result column="latitude" property="latitude" />
+        <result column="longitude" property="longitude" />
+        <result column="supervise_level" property="superviseLevel" />
+        <result column="sex" property="sex" />
+        <result column="org_type" property="orgType" />
+        <result column="org_name" property="orgName" />
+        <result column="prov_id" property="provId" />
+        <result column="city_id" property="cityId" />
+        <result column="ares_id" property="aresId" />
+        <result column="address" property="address" />
+        <result column="valid" property="valid" />
+        <result column="create_user" property="createUser" />
+        <result column="create_time" property="createTime" />
+        <result column="org_code" property="orgCode" />
+        <result column="account_num" property="accountNum" />
+        <result column="short_name" property="shortName" />
+        <result column="matching_org" property="matchingOrg" />
+        <result column="root_org_id" property="rootOrgId" />
+        <result column="parent_id" property="parentId" />
+        <result column="parent_collectivize" property="parentCollectivize" />
+        <result column="parent_supervise" property="parentSupervise" />
+        <result column="parent_owner_unit" property="parentOwnerUnit" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        company_flag, level, fire_risk, tel, email, mobile_phone, other_contact, latitude, longitude, supervise_level, sex, org_type, org_name, prov_id, city_id, ares_id, address, valid, create_user, create_time, org_code, account_num, short_name, matching_org, root_org_id, parent_id, parent_collectivize, parent_supervise, parent_owner_unit
+    </sql>
+
+</mapper>
