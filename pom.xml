@@ -14,13 +14,13 @@
         <module>Springboot-nodeJs</module>
         <module>Springboot-dataStructure</module>
         <module>springboot-designPattern</module>
-      <!--  <module>springboot-jvm</module>-->
         <module>springboot-concurrent</module>
         <module>springboot-javase</module>
         <module>springboot-jpa</module>
         <module>springboot-zookeeper</module>
         <module>springboot-kafka</module>
         <module>springboot-netty</module>
+        <module>springboot-mongodb</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -56,18 +56,11 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/junit/junit -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
 
-            <scope>compile</scope>
-        </dependency>
-
-       <!-- <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>-->
+        <!-- <dependency>
+             <groupId>mysql</groupId>
+             <artifactId>mysql-connector-java</artifactId>
+         </dependency>-->
         <!-- https://mvnrepository.com/artifact/com.google.zxing/core -->
         <dependency>
             <groupId>com.google.zxing</groupId>
@@ -114,11 +107,11 @@
             <artifactId>joda-time</artifactId>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
-       <!-- <dependency>
-            <groupId>com.microsoft.sqlserver</groupId>
-            <artifactId>mssql-jdbc</artifactId>
-            <version>7.2.2.jre8</version>
-        </dependency>-->
+        <!-- <dependency>
+             <groupId>com.microsoft.sqlserver</groupId>
+             <artifactId>mssql-jdbc</artifactId>
+             <version>7.2.2.jre8</version>
+         </dependency>-->
 
         <dependency>
             <groupId>commons-io</groupId>
