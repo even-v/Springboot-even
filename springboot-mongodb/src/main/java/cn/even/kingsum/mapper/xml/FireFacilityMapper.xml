@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.even.kingsum.mapper.FireFacilityMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.even.kingsum.entity.FireFacility">
+    <result column="id" property="id" />
+        <result column="deleted" property="deleted" />
+        <result column="create_time" property="createTime" />
+        <result column="name" property="name" />
+        <result column="remark" property="remark" />
+        <result column="module_id" property="moduleId" />
+        <result column="module_name" property="moduleName" />
+        <result column="module_remark" property="moduleRemark" />
+        <result column="type" property="type" />
+        <result column="sequence" property="sequence" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        deleted, create_time, name, remark, module_id, module_name, module_remark, type, sequence
+    </sql>
+
+</mapper>

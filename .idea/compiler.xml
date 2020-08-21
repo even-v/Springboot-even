@@ -7,18 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-kafka" />
-        <module name="Springboot-dataStructure" />
-        <module name="springboot-concurrent" />
         <module name="springboot-jpa" />
-        <module name="springboot-redis" />
         <module name="Springboot-nodeJs" />
-        <module name="springboot-designPattern" />
-        <module name="springboot-resources" />
-        <module name="springboot-jvm" />
+        <module name="springboot-mongodb" />
+        <module name="springboot-kafka" />
         <module name="springboot-zookeeper" />
-        <module name="springboot-netty" />
+        <module name="springboot-resources" />
+        <module name="springboot-designPattern" />
+        <module name="springboot-jvm" />
+        <module name="springboot-redis" />
+        <module name="springboot-concurrent" />
         <module name="springboot-javase" />
+        <module name="springboot-netty" />
+        <module name="Springboot-dataStructure" />
+        <module name="SpringbootDataStructure" />
       </profile>
     </annotationProcessing>
   </component>
@@ -26,12 +28,14 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Springboot-dataStructure" options="-parameters" />
       <module name="Springboot-nodeJs" options="-parameters" />
+      <module name="SpringbootDataStructure" options="-parameters" />
       <module name="springboot-concurrent" options="-parameters" />
       <module name="springboot-designPattern" options="-parameters" />
       <module name="springboot-javase" options="-parameters" />
       <module name="springboot-jpa" options="-parameters" />
       <module name="springboot-jvm" options="-parameters" />
       <module name="springboot-kafka" options="-parameters" />
+      <module name="springboot-mongodb" options="-parameters" />
       <module name="springboot-netty" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
       <module name="springboot-resources" options="-parameters" />

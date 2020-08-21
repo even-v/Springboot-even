@@ -35,7 +35,7 @@ public class MpGenerator {
         final GlobalConfig gc = new GlobalConfig();
         gc.setAuthor("jiangjingwei@yysoft.org.cn");
 //        gc.setOutputDir("D:/workspace/ideaWorkspace/AndonPlus/src/main/java");
-        gc.setOutputDir("C:\\Users\\even\\Desktop\\temp\\src\\main\\java");
+        gc.setOutputDir("C:\\Users\\jiang\\Desktop\\temp\\src\\main\\java");
         gc.setFileOverride(true);// 是否覆盖同名文件，默认是false
         gc.setActiveRecord(false);// 不需要ActiveRecord特性的请改为false
         gc.setEnableCache(false);// XML 二级缓存
@@ -67,8 +67,8 @@ public class MpGenerator {
         });
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("root");
-        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/kingsum?characterEncoding=UTF-8");
+        dsc.setPassword("12345679gw");
+        dsc.setUrl("jdbc:mysql://www.youchisoft.cn:3308/fire_protection?characterEncoding=UTF-8");
         mpg.setDataSource(dsc);
 
         // 策略配置
@@ -77,10 +77,10 @@ public class MpGenerator {
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
 
 
-        strategy.setTablePrefix(new String[] { "socialunit_" });// 此处可以修改为您的表前缀
+        strategy.setTablePrefix(new String[] { "t_" });// 此处可以修改为您的表前缀
 //        String [] tables={ "iot_device", "iot_device_buildings","iot_device_collect","iot_park","iot_park_principal"};
 //        String [] tables={"org_platform"};
-        String [] tables={ "socialunit_building", "socialunit_floor","socialunit_floor_partition","socialunit_floor_principal"};
+        String [] tables={ "t_fire_facility", "t_fire_module"};
 //        String [] tables={ "sys_employee", "sys_menu","sys_modular","sys_org","sys_role","sys_role_interface","sys_role_menu","sys_user","sys_user_role","sys_version"};
 
         strategy.setInclude(tables); // 需要生成的表

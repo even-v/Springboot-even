@@ -1,6 +1,6 @@
 package cn.even.kingsum.origin.entity;
 
-import org.apache.commons.codec.digest.DigestUtils;
+//import org.apache.commons.codec.digest.DigestUtils;
 
 public class IotDevice{
 
@@ -163,6 +163,7 @@ public class IotDevice{
 		if(controllerNo == null) controllerNo = "";
 		if(areaNo == null) areaNo = "";
 		if(placeNo == null) placeNo = "";
-		return DigestUtils.md5Hex(trspId + "-" + sysAddr + "-" + controllerNo + "-" + areaNo + "-" + placeNo);
+//		return DigestUtils.md5Hex(trspId + "-" + sysAddr + "-" + controllerNo + "-" + areaNo + "-" + placeNo);
+		return null;
 	}
 }

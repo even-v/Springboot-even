@@ -6,9 +6,6 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.*;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
-import java.util.Date;
 import java.util.Set;
 
 /**
@@ -28,7 +25,8 @@ public class NonBlockingNIODemo {
     @Test
     public void client() throws IOException {
         //1.获取通道
-        SocketChannel channel=SocketChannel.open(new InetSocketAddress("127.0.0.1", 9999));
+//        SocketChannel channel=SocketChannel.open(new InetSocketAddress("localhost", 23367));
+        SocketChannel channel=SocketChannel.open(new InetSocketAddress("47.110.67.2", 23367));
 
         //2.切换为非阻塞模式
         channel.configureBlocking(false);
@@ -37,8 +35,9 @@ public class NonBlockingNIODemo {
         ByteBuffer buffer=ByteBuffer.allocate(1024);
 
         //4.发送数据给客户端
-        buffer.put(new Date().toString().getBytes());
+        buffer.put(" client test".getBytes());
         buffer.flip();
+
         channel.write(buffer);
         buffer.clear();
 

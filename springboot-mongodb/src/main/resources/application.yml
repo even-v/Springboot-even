@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/kingsum?characterEncoding=UTF-8
+    url: jdbc:mysql://www.youchisoft.cn:3308/fire_protection?characterEncoding=UTF-8
     username: root
-    password: root
+    password: 12345679gw
   data:
     mongodb:
       uri: mongodb://localhost:27017/kingsum

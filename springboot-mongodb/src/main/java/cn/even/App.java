@@ -12,7 +12,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * Description: 启动类
  */
 @SpringBootApplication
-@MapperScan(value = {"cn.even.kingsum.mapper"})
+@MapperScan(value = {"cn.ycsoft.*.mapper"})
 @EnableScheduling
 public class App {
     public static void main(String[] args) {
